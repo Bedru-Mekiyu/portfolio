@@ -1,0 +1,55 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #e2e8f0;
+  overflow-x: hidden;
+  background: #0f172a;
+}
+
+.animated-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(125deg, #06b6d4, #3b82f6, #8b5cf6);
+  background-size: 300% 300%;
+  animation: gradientShift 13s ease-in-out infinite;
+  opacity: 0.1;
+  z-index: 0;
+}
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.glass {
+  background: rgba(15,23,42,0.75);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(6,182,212,0.15);
+  box-shadow: 0 0 40px rgba(6,182,212,0.1);
+}
+
+input, textarea {
+  background: rgba(30,41,59,0.8);
+  border: 1px solid rgba(6,182,212,0.3);
+  color: #f8fafc;
+  transition: 0.3s ease;
+}
+input:focus, textarea:focus {
+  background: rgba(15,25,45,0.9);
+  border-color: #06b6d4;
+  box-shadow: 0 0 25px rgba(6,182,212,0.45);
+}
+.form-control::placeholder { color: #94a3b8; }
+
+.btn-neon {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+  border: none;
+  color: white;
+  box-shadow: 0 0 20px rgba(6,182,212,0.4);
+  transition: all 0.35s ease;
+}
+.btn-neon:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 40px rgba(6,182,212,0.9);
+}

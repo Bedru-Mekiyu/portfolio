@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <meta name="description" content="Thank you for contacting Bedru Mekiyuh — Creative Engineer specializing in modern digital experiences." />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/thank.css">
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen text-center relative">
+  <!-- Background Animation -->
+  <div class="animated-bg"></div>
+
+  <!-- Thank You Card -->
+  <div class="glass z-10" data-aos="zoom-in-up">
+    <div id="success-animation"></div>
+    <h1 class="text-3xl font-bold mb-2 neon-text">Thank You!</h1>
+    <p class="text-slate-400 mb-4">
+      Your message was delivered successfully.<br />Expect a reply within 24 hours.
+    </p>
+    <button class="neon-btn" onclick="window.location.href='index.html'">
+      <i class="bi bi-house-door me-2"></i>Return Home
+    </button>
+    <p class="text-slate-500 text-sm mt-4">
+      Redirecting automatically in <span id="counter" class="text-cyan-400">10</span> seconds…
+    </p>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script src="./style/thank.js"></script>
+</body>
+</html>

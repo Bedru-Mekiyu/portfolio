@@ -1,0 +1,27 @@
+
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+.neon-text {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glass {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.btn-neon {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+  border: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.btn-neon:hover {
+  opacity: 0.94;
+  transform: scale(1.03);
+}
