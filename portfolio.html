@@ -24,7 +24,7 @@
       <a href="index.html" class="logo text-decoration-none fw-bold fs-4 tracking-wide">
         <span class="text-white">@</span><span class="text-cyan-400">Bedru</span>
       </a>
-      <nav class="d-none d-md-flex align-items-center gap-4">
+      <nav id="main-nav" class="d-none d-md-flex align-items-center gap-4">
         <a href="index.html" class="nav-link text-white hover:text-cyan-400">Home</a>
         <a href="services.html" class="nav-link text-white hover:text-cyan-400">Services</a>
         <a href="portfolio.html" class="nav-link text-white hover:text-cyan-400 active">Portfolio</a>
@@ -32,8 +32,8 @@
         <a href="https://www.linkedin.com/in/bedru-mekiyu-39ba6736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile" title="LinkedIn" class="text-slate-400 hover:text-cyan-400"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/Bedru-Mekiyu/" aria-label="GitHub profile" title="GitHub" class="text-slate-400 hover:text-cyan-400"><i class="bi bi-github"></i></a>
       </nav>
-      <button class="mobile-nav-toggle d-md-none text-cyan-400 fs-3 border-0 bg-transparent" aria-label="Open navigation menu" title="Menu"><i class="bi bi-list"></i></button>
-      <img src="assets/img/profile/bedru-image.jpg" alt="Bedru photo" class="rounded-circle me-2" style="width:50px;height:50px;object-fit:cover;" />
+      <button class="mobile-nav-toggle d-md-none text-cyan-400 fs-3 border-0 bg-transparent" aria-label="Open navigation menu" aria-controls="main-nav" aria-expanded="false" title="Menu"><i class="bi bi-list"></i></button>
+      <img src="assets/img/profile/bedru-image.jpg" alt="Bedru photo" class="rounded-circle me-2 profile-avatar" />
     </div>
   </header>
 
@@ -95,9 +95,9 @@
             <h4 class="text-cyan-400 fs-5 mb-2">Vital Registration App</h4>
             <p class="text-slate-400 small mb-3">A digital civil registry platform recording vital events securely.</p>
             <a href="#vr-frame" class="glightbox btn btn-neon w-100 rounded-pill">Preview Live</a>
-            <a href="https://lifelog-ethiopia.lovable.app/">Go to website</a>
-            <div id="vr-frame" class="glightbox-content" style="display:none;">
-            <iframe src="https://lifelog-ethiopia.lovable.app/" width="100%" height="600" loading="lazy" style="border:none;border-radius:1rem;"></iframe>
+            <a href="https://lifelog-ethiopia.lovable.app/" class="project-visit-link">Go to website</a>
+            <div id="vr-frame" class="glightbox-content glightbox-hidden">
+            <iframe src="https://lifelog-ethiopia.lovable.app/" class="preview-iframe" loading="lazy" title="Vital Registration App live preview"></iframe>
             </div>
           </div>
         </div>
@@ -109,11 +109,11 @@
             <h4 class="text-cyan-400 fs-5 mb-2">Apple Clone</h4>
             <p class="text-slate-400 small mb-3">An immersive e‑commerce experience built with React and Firebase.</p>
             <a href="#amazon-frame" class="glightbox btn btn-neon w-100 rounded-pill">Preview Live</a>
-            <a href="https://bedru-mekiyu.github.io/apple-clone/">Go to website</a>
+            <a href="https://bedru-mekiyu.github.io/apple-clone/" class="project-visit-link">Go to website</a>
 
-            <div id="amazon-frame" class="glightbox-content" style="display:none;">
+            <div id="amazon-frame" class="glightbox-content glightbox-hidden">
               
-              <iframe src="https://bedru-mekiyu.github.io/apple-clone/" width="100%" height="600" loading="lazy" style="border:none;border-radius:1rem;"></iframe>
+              <iframe src="https://bedru-mekiyu.github.io/apple-clone/" class="preview-iframe" loading="lazy" title="Apple Clone live preview"></iframe>
             </div>
           </div>
         </div>
@@ -125,9 +125,9 @@
             <h4 class="text-cyan-400 fs-5 mb-2">Fruit Display Web App</h4>
             <p class="text-slate-400 small mb-3">A vibrant Tailwind app for interactive fruit catalog filtering and search.</p>
             <a href="#fruit-frame" class="glightbox btn btn-neon w-100 rounded-pill">Preview Live</a>
-            <a href="https://bedru-mekiyu.github.io/fruit-container/">Go to website</a>
-            <div id="fruit-frame" class="glightbox-content" style="display:none;">
-              <iframe src="https://bedru-mekiyu.github.io/fruit-container/" width="100%" height="600" loading="lazy" style="border:none;border-radius:1rem;"></iframe>
+            <a href="https://bedru-mekiyu.github.io/fruit-container/" class="project-visit-link">Go to website</a>
+            <div id="fruit-frame" class="glightbox-content glightbox-hidden">
+              <iframe src="https://bedru-mekiyu.github.io/fruit-container/" class="preview-iframe" loading="lazy" title="Fruit Display Web App live preview"></iframe>
             </div>
           </div>
         </div>
@@ -139,9 +139,9 @@
             <h4 class="text-cyan-400 fs-5 mb-2">simple chat App</h4>
             <p class="text-slate-400 small mb-3">A public place to chat with peer to make friendship on real‑time </p>
             <a href="#feedback-frame" class="glightbox btn btn-neon w-100 rounded-pill">Preview Live</a>
-            <a href="https://bedru-mekiyu.github.io/chatbot-project/">Go to website</a>
-            <div id="feedback-frame" class="glightbox-content" style="display:none;">
-              <iframe src="https://bedru-mekiyu.github.io/chatbot-project/" width="100%" height="600" loading="lazy" style="border:none;border-radius:1rem;"></iframe>
+            <a href="https://bedru-mekiyu.github.io/chatbot-project/" class="project-visit-link">Go to website</a>
+            <div id="feedback-frame" class="glightbox-content glightbox-hidden">
+              <iframe src="https://bedru-mekiyu.github.io/chatbot-project/" class="preview-iframe" loading="lazy" title="Simple chat app live preview"></iframe>
             </div>
           </div>
         </div>
@@ -174,6 +174,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
   <script src="./style/portfolio.js"></script>
 </body>
 </html>

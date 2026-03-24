@@ -23,7 +23,7 @@
   <header id="header" class="fixed-top glass py-3 border-b border-slate-800 backdrop-blur-lg transition-all duration-500 ease-in-out">
     <div class="container d-flex justify-content-between align-items-center">
       <a href="index.html" class="logo text-decoration-none fw-bold fs-4 tracking-wide"><span class="text-white" >@</span><span class="text-cyan-400" >Bedru</span></a>
-      <nav class="d-none d-md-flex align-items-center gap-4">
+      <nav id="main-nav" class="d-none d-md-flex align-items-center gap-4">
         <a href="index.html" class="nav-link text-white hover:text-cyan-400 active">Home</a>
         <a href="services.html" class="nav-link text-white hover:text-cyan-400">Services</a>
         <a href="portfolio.html" class="nav-link text-white hover:text-cyan-400">Portfolio</a>
@@ -31,7 +31,8 @@
         <a href="https://www.linkedin.com/in/bedru-mekiyu-39ba6736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn profile" title="LinkedIn" class="text-slate-400 hover:text-cyan-400"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/Bedru-Mekiyu/" aria-label="GitHub profile" title="GitHub" class="text-slate-400 hover:text-cyan-400"><i class="bi bi-github"></i></a>
       </nav>
-      <img src="assets/img/profile/bedru-image.jpg" alt="Bedru Mekiyu profile photo" class="rounded-circle me-2" style="width:50px;height:50px;object-fit:cover;" />
+      <button class="mobile-nav-toggle d-md-none text-cyan-400 fs-3 border-0 bg-transparent" aria-label="Open navigation menu" aria-controls="main-nav" aria-expanded="false" title="Menu"><i class="bi bi-list"></i></button>
+      <img src="assets/img/profile/bedru-image.jpg" alt="Bedru Mekiyu profile photo" class="rounded-circle me-2 profile-avatar" />
 
     </div>
 
@@ -52,7 +53,6 @@
       <i class="bi bi-chevron-double-down text-2xl"></i>
     </div>
   </section>
-  </div>
   <!-- About -->
   <section id="about" class="p-10 bg-slate-950/90">
     <div class="container">
@@ -155,22 +155,22 @@
           <h5 class="text-cyan-400 mb-3"><i class="bi bi-code-slash me-2"></i>Frontend Development</h5>
           <div class="mb-3">
             <div class="flex justify-between mb-1 text-slate-400"><span>React / Next.js</span><span class="skill-counter text-cyan-400" data-target="95">0%</span></div>
-            <div class="progress bg-slate-800" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="95" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="95"></div></div>
           </div>
           <div class="mb-3">
             <div class="flex justify-between mb-1 text-slate-400"><span>HTML / CSS / JS</span><span class="skill-counter text-cyan-400" data-target="98">0%</span></div>
-            <div class="progress bg-slate-800" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="98" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="98"></div></div>
           </div>
         </div>
         <div class="col-md-5 glass p-5 rounded-3xl">
           <h5 class="text-cyan-400 mb-3"><i class="bi bi-server me-2"></i>Backend / DevOps</h5>
           <div class="mb-3">
             <div class="flex justify-between mb-1 text-slate-400"><span>Node.js / Express</span><span class="skill-counter text-cyan-400" data-target="85">0%</span></div>
-            <div class="progress bg-slate-800" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="85" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="85"></div></div>
           </div>
           <div class="mb-3">
             <div class="flex justify-between mb-1 text-slate-400"><span>Docker / CI/CD</span><span class="skill-counter text-cyan-400" data-target="80">0%</span></div>
-            <div class="progress bg-slate-800" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="80" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="80"></div></div>
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@
           <div class="glass p-5 rounded-3xl hover-glow">
             <i class="bi bi-chat-dots text-4xl text-cyan-400 mb-2"></i>
             <h6>Communication</h6>
-            <div class="progress bg-slate-800 mt-2" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="95" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 mt-2 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="95"></div></div>
             <span class="skill-counter text-cyan-400 small fw-semibold mt-1 d-inline-block" data-target="95">0%</span>
           </div>
         </div>
@@ -196,7 +196,7 @@
           <div class="glass p-5 rounded-3xl hover-glow">
             <i class="bi bi-award text-4xl text-cyan-400 mb-2"></i>
             <h6>Leadership</h6>
-            <div class="progress bg-slate-800 mt-2" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="90" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 mt-2 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="90"></div></div>
             <span class="skill-counter text-cyan-400 small fw-semibold mt-1 d-inline-block" data-target="90">0%</span>
           </div>
         </div>
@@ -204,7 +204,7 @@
           <div class="glass p-5 rounded-3xl hover-glow">
             <i class="bi bi-lightbulb text-4xl text-cyan-400 mb-2"></i>
             <h6>Creativity</h6>
-            <div class="progress bg-slate-800 mt-2" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="92" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 mt-2 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="92"></div></div>
             <span class="skill-counter text-cyan-400 small fw-semibold mt-1 d-inline-block" data-target="92">0%</span>
           </div>
         </div>
@@ -212,7 +212,7 @@
           <div class="glass p-5 rounded-3xl hover-glow">
             <i class="bi bi-compass text-4xl text-cyan-400 mb-2"></i>
             <h6>Adaptability</h6>
-            <div class="progress bg-slate-800 mt-2" style="height:6px;"><div class="progress-bar bg-cyan-400 rounded-pill" data-target="88" style="width:0%;"></div></div>
+            <div class="progress bg-slate-800 mt-2 progress-thin"><div class="progress-bar bg-cyan-400 rounded-pill progress-zero" data-target="88"></div></div>
             <span class="skill-counter text-cyan-400 small fw-semibold mt-1 d-inline-block" data-target="88">0%</span>
           </div>
         </div>
@@ -227,7 +227,7 @@
       <div class="col-md-4">
         
         <div class="glass p-5 rounded-3xl">
-          <img src="assets/img/person/person-m-5.webp" alt="Client" class="rounded-circle me-2   " style="width:50px;height:50px;object-fit:cover;" />
+          <img src="assets/img/person/person-m-5.webp" alt="Client" class="rounded-circle me-2 profile-avatar" />
 
           <i class="bi bi-quote text-cyan-400 fs-1 mb-3 d-block"></i>
           <p class="text-slate-400">“Bedru’s attention to detail  instinct make complex products intuitive.”</p>
@@ -243,7 +243,7 @@
       </div>
       <div class="col-md-4">
         <div class="glass p-5 rounded-3xl">
-          <img src="assets/img/portfolio/project4.jpg" alt="Client" class="rounded-circle me-2 " style="width:50px;height:50px;object-fit:cover;" />
+          <img src="assets/img/portfolio/project4.jpg" alt="Client" class="rounded-circle me-2 profile-avatar" />
 
           <i class="bi bi-quote text-cyan-400 fs-1 mb-3 d-block"></i>
           <p class="text-slate-400">“Transforms concept briefs into seamless interactive systems.”</p>
@@ -260,7 +260,7 @@
       <div class="col-md-4">
         
         <div class="glass p-5 rounded-3xl">
-          <img src="assets/img/person/person-m-7.webp" alt="Client" class="rounded-circle me-2 " style="width:50px;height:50px;object-fit:cover;" />
+          <img src="assets/img/person/person-m-7.webp" alt="Client" class="rounded-circle me-2 profile-avatar" />
 
           <i class="bi bi-quote text-cyan-400 fs-1 mb-3 d-block"></i>
           <p class="text-slate-400">“A rare balance between visual aesthetics and coding efficiency.”</p>
