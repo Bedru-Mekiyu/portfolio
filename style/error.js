@@ -20,16 +20,3 @@ const countdown=setInterval(()=>{
     window.location.href='contact.html';
   }
 },1000);
-
-
-
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-e.preventDefault();
-// simulate success/failure conditions
-const isSuccess = Math.random() > 0.8; // 20% chance fail (example)
-if (isSuccess) {
-  window.location.href = "thank-you.html";
-} else {
-  window.location.href = "error.html";
-}
-});
